@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Chat Widget - Embed Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/hotel-ai-widget@0.0.0/embed/hotel-ai-widget.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .demo-content {
+            line-height: 1.6;
+            color: #666;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Hotel</h1>
+        <div class="demo-content">
+            <p>This is a demo page showing how the Hotel Chat Widget can be embedded into any website.</p>
+            <p>The chat widget will appear in the bottom-right corner. You can customize its position, theme, and behavior using data attributes.</p>
+            <p>Try clicking on the chat icon to start a conversation!</p>
+            <p>You can query the system about the following hotels right now:</p>
+            <ul>
+                <li><i>Jumeirah Emirates Towers</i> https://trib.bukprotocol.ai/hotel/onboard/6874c63da44b4a0f6506901a</li>
+                <li><i>The Address Dubai</i> https://trib.bukprotocol.ai/hotel/onboard/6874cc4ca44b4a0f6506919c</li>
+                <li><i>Rove City Walk</i> https://trib.bukprotocol.ai/hotel/onboard/68655881f82cbfe583c94da3/</li>
+                <li><i>The St. Regis Dubai, The Palm</i> https://trib.bukprotocol.ai/hotel/onboard/687683ac3aaca830ebf32130</li>
+                <li><i>Hilton Dubai</i> https://trib.bukprotocol.ai/hotel/onboard/687683763aaca830ebf32124</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hotel Chat Widget -->
+    <div 
+        data-hotel-ai-widget
+        data-api-key="demo-api-key"
+        data-base-url="https://trib-api.bukprotocol.ai"
+        data-google-maps-api-key="AIzaSyCYMRvp7WjQAfpm7foFNr0x9kKwU_84s78"
+        data-theme="light"
+        data-position="bottom-right"
+    ></div>
+
+    <script src="https://unpkg.com/hotel-ai-widget@0.0.0/embed/hotel-ai-widget.min.js"></script>
+</body>
+</html>
